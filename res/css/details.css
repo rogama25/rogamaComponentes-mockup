@@ -1,0 +1,59 @@
+.gallery > section{
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+main > section {
+    grid-template-columns: 4fr 6fr;
+    height: fit-content;
+    width: fit-content;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+    border: grey solid 2px;
+    padding: 5%;
+}
+
+main {
+    padding: 0 12.5vw;
+}
+
+@media screen and (max-width: 768px){
+    main {
+        padding: 5vw;
+    }
+
+    main > section {
+        grid-template-columns: 1fr;
+    }
+}
+
+main section {
+    gap: 5%;
+}
+
+.gallery > img {
+    margin-bottom: 32px;
+}
+
+main * {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 3.5ex;
+}
+
+h2 {
+    color: orange;
+}
+
+li:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+li {
+    color: #282828;
+}

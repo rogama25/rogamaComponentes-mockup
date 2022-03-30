@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Detalles del producto - GamaComponentes</title>
-    <script defer src="res/js/common.js"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=ASKudkPFe6GNrq7X4HclVZmypPoMJ2Kj325VYB5Loe_A5stIyDfdEehu78hzmFiOYEzKIvyec43s2ovh&currency=EUR"></script>
     <script defer src="res/js/details.js"></script>
     <link rel="stylesheet" href="res/css/common.css">
     <link rel="stylesheet" href="res/css/details.css">
@@ -69,14 +70,122 @@
     </nav>
 </header>
 <main>
-
+    <section class="grid">
+        <section class="gallery">
+            <img src="res/img/m2.jpg" id="big_image">
+            <section class="grid">
+                <img src="res/img/m2.jpg" onclick="replaceImage('res/img/m2.jpg')">
+                <img src="res/img/m2_2.jpg" onclick="replaceImage('res/img/m2_2.jpg')">
+                <img src="res/img/m2_3.jpg" onclick="replaceImage('res/img/m2_3.jpg')">
+                <img src="res/img/m2_4.jpg" onclick="replaceImage('res/img/m2_4.jpg')">
+            </section>
+        </section>
+        <section>
+            <h1>Samsung M52 5G</h1>
+            <h2>300€</h2>
+            <ul>
+                <li>El poder de la velocidad de datos 5G de próxima generación te ofrece una experiencia completamente
+                    nueva en tu móvil.
+                </li>
+                <li>El smartphone Galaxy M52 5G cuenta con un potente procesador Octa-core y 6 GB de RAM, lo que supone
+                    mucha potencia para realizar muchas tareas a la vez o jugar.
+                </li>
+                <li>El teléfono móvil libre Galaxy M52 5G lee de forma inteligente el patrón de uso de tu teléfono para
+                    proporcionar hasta 4 GB de RAM virtual adicional, lo que te permite utilizar aplicaciones sin
+                    problemas y realizar múltiples tareas a la vez.
+                </li>
+                <li>Cuenta con 128 GB de almacenamiento interno para tus fotos y videos, además de soporte para una
+                    tarjeta microSD de hasta 1 TB, obteniendo así mucho espacio para almacenar tus momentos más
+                    preciados.
+                </li>
+                <li>Amplía tu campo de visión con la pantalla Infinity-O de 6,7 pulgadas del teléfono móvil libre Galaxy
+                    M52 5G y observa todo lo que te has estado perdiendo.
+                </li>
+            </ul>
+            <section>
+                <h2>Compra este producto</h2>
+                <section class="flex" style="height: 125px">
+                    <form style="flex-grow: 0.25; font-size: 1.2em">
+                        <label for="amount">Cantidad: </label><input type="number" min="1" max="100" value="1" style="font-size: 1.1em" id="amount">
+                    </form>
+                    <div id="paypal-button-container" style="flex-grow: 1"></div>
+                </section>
+            </section>
+        </section>
+    </section>
+    <section>
+        <ul>
+            <li><strong>Sistema operativo</strong> Android 11</li>
+            <li><strong>Procesador</strong> Qualcomm SDM 778G Octa-core (4 x 2.4 GHz + 4 x 1.8 GHz)</li>
+            <li><strong>Pantalla</strong> 6.7", FHD+ (1080 x 2400) Infinity-O Super AMOLED+ (120 Hz)</li>
+            <li><strong>SIM</strong> Dual SIM - SIM 1 + Hybrid (SIM o MicroSD)</li>
+            <li><strong>Memoria</strong>
+                <ul>
+                    <li>RAM: 6 GB</li>
+                    <li>Almacenamiento interno: 128 GB (Ampliable con tarjeta MicroSD hasta 1 TB)</li>
+                </ul>
+            </li>
+            <li><strong>Cámara</strong>
+                <ul>
+                    <li>Principal:
+                        <ul>
+                            <li>12 MP Gran angular</li>
+                            <li>5 MP Macro</li>
+                            <li>64 MP Principal</li>
+                        </ul>
+                    </li>
+                    <li>Frontal:
+                        <ul>
+                            <li>32 MP</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>Redes</strong>
+                <ul>
+                    <li>5G</li>
+                </ul>
+            </li>
+            <li><strong>Conectividad</strong>
+                <ul>
+                    <li>WiFi 802.11 a/b/g/n/ac 2.4+5GHz</li>
+                    <li>NFC</li>
+                    <li>Bluetooth 5.0</li>
+                </ul>
+            </li>
+            <li><strong>Biometría</strong>
+                <ul>
+                    <li>Lector de huellas en el lateral</li>
+                </ul>
+            </li>
+            <li><strong>Otros</strong>
+                <ul>
+                    <li>Samsung Pay</li>
+                    <li>One UI 3.1</li>
+                    <li>Dolby</li>
+                </ul>
+            </li>
+            <li><strong>Dimensiones y peso</strong>
+                <ul>
+                    <li>Dimensiones: 164.2 x 76.4 x 7.4 mm</li>
+                    <li>Peso: 173 g</li>
+                </ul>
+            </li>
+            <li><strong>Batería</strong>
+                <ul>
+                    <li>5000 mAh</li>
+                    <li>Carga rápida 25 W</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
 </main>
 <footer>
     <h3>Enlaces destacados</h3>
     <hr>
     <p><a href="index.html">Inicio</a></p>
     <p><a href="details.html">Detalles</a></p>
-    <p>Máster en Ingeniería Web</p>
+    <p>Máster en Ingeniería Web - Rodrigo Garcia Martin</p>
 </footer>
 </body>
 </html>
